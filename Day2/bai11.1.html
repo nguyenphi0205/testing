@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng Nhập</title>
+    <style>
+        h2 {
+            text-align: center
+        }
+
+        .login {
+            padding: 10px;
+        }
+
+        .a1,
+        .a2 {
+            margin: 10px 20px 10px 20px;
+
+        }
+
+        .pass {
+            margin-left: 35px;
+        }
+
+        .main {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            margin: -100px 0 0 -200px;
+            top: 50%;
+            left: 50%;
+            background-color: blanchedalmond;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .button {
+            position: absolute;
+            /* top: 50%; */
+        }
+        p{
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Đăng Nhập</h2>
+        <div class="login">
+            <div class="a1">
+                <label>Mã người dùng</label>
+                <input type="text" />
+            </div>
+            <div class="a2">
+                <label>Mật Khẩu</label>
+                <input type="password" class="pass" />
+            </div>
+        </div>
+        <div class="wrapper">
+            <input type="submit" value="Đồng ý" class="button" onclick="LoginFunction()" />
+        </div>
+        <div style="text-align: center">
+            <p id="Result" ></p>
+        </div>
+    </div>
+</body>
+<script>
+    function LoginFunction() {
+        document.getElementById("Result").innerHTML = "bạn đã đăng nhập thành công!";
+    }
+</script>
+
+</html>

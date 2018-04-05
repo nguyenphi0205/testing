@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <style>
+        label {
+            margin-right: 50px;
+        }
+
+        .Main {
+            position: absolute;
+            text-align: center;
+            margin: -300px 0 0 -200px;
+            top: 50%;
+            left: 50%;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Main">
+        <h2>Phiếu đăng kí</h2>
+        <div class="Infor">
+            <div>
+                <table class="tg" border="1">
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Họ và tên</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Địa chỉ</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <input type="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Điện Thoại</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <input type="tel" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Phái</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <input type="radio" value="Nam" checked/>nam
+                            <input type="radio" value="Nu" />nu
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Nghề nghiệp</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <select>
+                                <option value="1">Giáo viên</option>
+                                <option value="2">Developer</option>
+                                <option value="3">Project Manager</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Chọn sản phẩm tham gia</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <select multiple>
+                                <option value="1">kem đánh răng</option>
+                                <option value="2">Bột giặt</option>
+                                <option value="3">Sữa</option>
+                                <option value="4">Trà</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tg-yw4l">
+                            <label>Số người dự đoán tham gia</label>
+                        </td>
+                        <td class="tg-yw4l">
+                            <input type="tel" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center" colspan="2">
+                            <button onclick="RegisterFunction()">Đồng Ý</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="Result" style="text-align: center"></p>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    function RegisterFunction() {
+        document.getElementById("Result").innerHTML = "bạn đã đăng ký thành công!";
+    }
+</script>
+
+</html>
